@@ -1,3 +1,11 @@
+## ShipShip browser preview (Unity WebGL)
+
+This fork includes a WebGL build script and an on-demand GitHub Actions workflow. The original project has not yet been verified as fully playable. **The build and public URL are not live until Unity activation, a successful build, and an explicitly approved Pages deployment.**
+
+[إعداد وتشغيل معاينة شب شب بالعربي](docs/SHIPSHIP_WEBGL_AR.md)
+
+---
+
 In this strategy game, you draft cards each round to build your army. You'll choose whether to upgrade your characters, double your units on the field, or spawn new ones. After you pick your cards, the armies fight each other automatically. If you lose a round, you get a bonus card to help you catch up
 
 <img width="476" height="836" alt="Ekran görüntüsü 2025-10-13 122942" src="https://github.com/user-attachments/assets/afa7346d-75b4-4480-b2b1-57ebc1141358" />
