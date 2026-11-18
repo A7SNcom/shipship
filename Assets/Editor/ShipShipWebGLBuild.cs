@@ -18,6 +18,17 @@ public static class ShipShipWebGLBuild
     [MenuItem("ShipShip/Build WebGL Preview")]
     public static void Build()
     {
+        BuildInternal(false);
+    }
+
+    [MenuItem("ShipShip/Build and Run WebGL Preview")]
+    public static void BuildAndRun()
+    {
+        BuildInternal(true);
+    }
+
+    private static void BuildInternal(bool openBrowser)
+    {
         foreach (string scene in Scenes)
         {
             if (AssetDatabase.LoadAssetAtPath<SceneAsset>(scene) == null)
@@ -50,7 +61,7 @@ public static class ShipShipWebGLBuild
             scenes = Scenes,
             locationPathName = output,
             target = BuildTarget.WebGL,
-            options = BuildOptions.None
+            options = openBrowser ? BuildOptions.AutoRunPlayer : BuildOptions.None
         });
 
         if (report.summary.result != BuildResult.Succeeded)
